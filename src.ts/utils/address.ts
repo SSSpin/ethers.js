@@ -92,7 +92,7 @@ export function getAddress(address: string): string {
         errors.throwError('invalid address', errors.INVALID_ARGUMENT, { arg: 'address', value: address });
     }
 
-    if (address.match(/^(0x)?[0-9a-fA-F]{40}$/)) {
+    if (address.match(/^(0x)?[0-9a-fA-F]{42}$/)) {
 
         // Missing the 0x prefix
         if (address.substring(0, 2) !== '0x') { address = '0x' + address; }
