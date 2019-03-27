@@ -1,7 +1,7 @@
 {
-  "name": "ethers",
-  "version": "4.0.27",
-  "description": "Ethereum wallet library.",
+  "name": "@spinlee/ethers",
+  "version": "1.0.1",
+  "description": "Ehters for flow chain",
   "main": "./index.js",
   "types": "./index.d.ts",
   "scripts": {
@@ -55,14 +55,11 @@
   },
   "browser": "./dist/ethers.min.js",
   "keywords": [
-    "ethereum",
+    "flow",
     "library",
     "wallet"
   ],
   "author": "Richard Moore <me@ricmoo.com>",
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/ethers-io/ethers.js.git"
-  },
+
   "license": "MIT"
 }

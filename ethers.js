@@ -1,11 +1,4 @@
 'use strict';
-var __importStar = (this && this.__importStar) || function (mod) {
-    if (mod && mod.__esModule) return mod;
-    var result = {};
-    if (mod != null) for (var k in mod) if (Object.hasOwnProperty.call(mod, k)) result[k] = mod[k];
-    result["default"] = mod;
-    return result;
-};
 Object.defineProperty(exports, "__esModule", { value: true });
 var contract_1 = require("./contract");
 exports.Contract = contract_1.Contract;
@@ -15,15 +8,15 @@ var abstract_signer_1 = require("./abstract-signer");
 exports.Signer = abstract_signer_1.Signer;
 var wallet_1 = require("./wallet");
 exports.Wallet = wallet_1.Wallet;
-var constants = __importStar(require("./constants"));
+var constants = require("./constants");
 exports.constants = constants;
-var errors = __importStar(require("./errors"));
+var errors = require("./errors");
 exports.errors = errors;
-var providers = __importStar(require("./providers"));
+var providers = require("./providers");
 exports.providers = providers;
-var utils = __importStar(require("./utils"));
+var utils = require("./utils");
 exports.utils = utils;
-var wordlists = __importStar(require("./wordlists"));
+var wordlists = require("./wordlists");
 exports.wordlists = wordlists;
 ////////////////////////
 // Compile-Time Constants

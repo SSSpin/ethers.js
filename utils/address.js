@@ -1,10 +1,7 @@
 'use strict';
-var __importDefault = (this && this.__importDefault) || function (mod) {
-    return (mod && mod.__esModule) ? mod : { "default": mod };
-};
 Object.defineProperty(exports, "__esModule", { value: true });
 // We use this for base 36 maths
-var bn_js_1 = __importDefault(require("bn.js"));
+var bn_js_1 = require("bn.js");
 var bytes_1 = require("./bytes");
 var keccak256_1 = require("./keccak256");
 var rlp_1 = require("./rlp");
@@ -74,7 +71,7 @@ function getAddress(address) {
     if (typeof (address) !== 'string') {
         errors.throwError('invalid address', errors.INVALID_ARGUMENT, { arg: 'address', value: address });
     }
-    if (address.match(/^(0x)?[0-9a-fA-F]{40}$/)) {
+    if (address.match(/^(0x)?[0-9a-fA-F]{42}$/)) {
         // Missing the 0x prefix
         if (address.substring(0, 2) !== '0x') {
             address = '0x' + address;
