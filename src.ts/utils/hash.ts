@@ -55,6 +55,7 @@ export function id(text: string): string {
     return keccak256(toUtf8Bytes(text));
 }
 
+
 export function hashMessage(message: Arrayish | string): string {
     return keccak256(concat([
         toUtf8Bytes('\x19Ethereum Signed Message:\n'),

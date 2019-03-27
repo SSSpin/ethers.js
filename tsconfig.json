@@ -8,8 +8,8 @@
         "moduleResolution": "node",
 
         "outDir": "./",
-
-        "declaration": true,
+        "allowJs": true,
+        //"declaration": true,
 
         "preserveSymlinks": true,
 
